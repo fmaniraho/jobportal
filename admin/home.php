@@ -20,13 +20,18 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>445</h3> 
-              <p>Applicants</p>
+            <?php
+                $sql = "SELECT count(*) as 'APPL' FROM `tbljobregistration` WHERE `PENDINGAPPLICATION`=1";
+                $mydb->setQuery($sql);
+                $pending = $mydb->loadSingleResult();
+              ?>
+              <h3><?php echo $pending->APPL; ?></h3> 
+              <p>Applicant(s)</p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            
           </div>
         </div>
         <!-- ./col -->
@@ -34,15 +39,18 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>18</h3>
-
+            <?php
+                $sql = "SELECT count(*) as 'VAC' FROM `tbljob`";
+                $mydb->setQuery($sql);
+                $vacancy = $mydb->loadSingleResult();
+              ?>
+              <h3><?php echo $vacancy->VAC; ?></h3> 
               <p>Vacancies</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
+           </div>
         </div>
         
       </div>
