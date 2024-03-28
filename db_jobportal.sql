@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2019 at 10:09 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 5.6.39
+-- Generation Time: Mar 28, 2024 at 10:21 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -46,16 +45,15 @@ CREATE TABLE `tblapplicants` (
   `DEGREE` text NOT NULL,
   `APPLICANTPHOTO` varchar(255) NOT NULL,
   `NATIONALID` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tblapplicants`
 --
 
 INSERT INTO `tblapplicants` (`APPLICANTID`, `FNAME`, `LNAME`, `MNAME`, `ADDRESS`, `SEX`, `CIVILSTATUS`, `BIRTHDATE`, `BIRTHPLACE`, `AGE`, `USERNAME`, `PASS`, `EMAILADDRESS`, `CONTACTNO`, `DEGREE`, `APPLICANTPHOTO`, `NATIONALID`) VALUES
-(2019016, 'asd', 'asd', 'asd', 'asd', 'Female', 'none', '1980-01-29', 'asd', 39, 'aa', 'e0c9035898dd52fc65c41454cec9c4d2611bfb37', 'a@gmil.com', '12312312', 'asd', 'photos/final.png', ''),
 (2019018, 'asdasd', 'asd', 'asd', 'sadas', 'Female', 'Single', '1992-01-12', 'sad', 27, 'ss', 'c1c93f88d273660be5358cd4ee2df2c2f3f0e8e7', 'a@gmil.com', 'sad', 'sad', '', ''),
-(2019020, 'sad', 'sad', 'sad', 'asdsad', 'Female', 'Single', '1992-10-14', 'asdsad', 27, 'ddd', '9c969ddf454079e3d439973bbab63ea6233e4087', 'a@gmil.com', '123123', 'sadsadsad', 'photos/077db70b-ab84-46c4-bbaa-a5dd6b7332a4_200x200.png', '');
+(2024021, 'FTester', 'LTester', '', 'KG 47 ST', 'Male', 'Married', '1988-02-26', 'Rwanda', 36, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'tester.rw@gmail.com', '0785223642', 'Bachelor', '', '');
 
 -- --------------------------------------------------------
 
@@ -69,7 +67,7 @@ CREATE TABLE `tblattachmentfile` (
   `FILE_NAME` varchar(90) NOT NULL,
   `FILE_LOCATION` varchar(255) NOT NULL,
   `USERATTACHMENTID` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tblattachmentfile`
@@ -77,6 +75,7 @@ CREATE TABLE `tblattachmentfile` (
 
 INSERT INTO `tblattachmentfile` (`FILEID`, `JOBID`, `FILE_NAME`, `FILE_LOCATION`, `USERATTACHMENTID`) VALUES
 (201900001, 2, 'Resume', 'photos/24122019073209Filtering a Group of Data VB.Net and SQL Server 2019.docx', 2019020),
+(202400002, 2, 'Resume', 'photos/27032024083220Tax_Law.pdf', 2024021),
 (2147483647, 2, 'Resume', 'photos/24122019072801Filtering a Group of Data VB.Net and SQL Server 2019.docx', 2019019);
 
 -- --------------------------------------------------------
@@ -91,17 +90,14 @@ CREATE TABLE `tblautonumbers` (
   `AUTOEND` int(11) NOT NULL,
   `AUTOINC` int(11) NOT NULL,
   `AUTOKEY` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tblautonumbers`
 --
 
 INSERT INTO `tblautonumbers` (`AUTOID`, `AUTOSTART`, `AUTOEND`, `AUTOINC`, `AUTOKEY`) VALUES
-(1, '02983', 8, 1, 'userid'),
-(2, '000', 79, 1, 'employeeid'),
-(3, '0', 21, 1, 'APPLICANT'),
-(4, '0000', 2, 1, 'FILEID');
+(1, '02983', 8, 1, 'userid');
 
 -- --------------------------------------------------------
 
@@ -112,23 +108,17 @@ INSERT INTO `tblautonumbers` (`AUTOID`, `AUTOSTART`, `AUTOEND`, `AUTOINC`, `AUTO
 CREATE TABLE `tblcategory` (
   `CATEGORYID` int(11) NOT NULL,
   `CATEGORY` varchar(90) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tblcategory`
 --
 
 INSERT INTO `tblcategory` (`CATEGORYID`, `CATEGORY`) VALUES
-(10, 'Technology'),
-(11, 'Managerial'),
-(12, 'Engineer'),
-(13, 'IT'),
-(14, 'Civil Engineer'),
+(12, 'IT'),
 (15, 'HR'),
 (23, 'Sales'),
-(24, 'Banking'),
 (25, 'Finance'),
-(26, 'BPO'),
 (27, 'Degital Marketing'),
 (28, 'Shipping');
 
@@ -145,7 +135,7 @@ CREATE TABLE `tblcompany` (
   `COMPANYCONTACTNO` varchar(30) NOT NULL,
   `COMPANYSTATUS` varchar(90) NOT NULL,
   `COMPANYMISSION` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tblcompany`
@@ -186,7 +176,7 @@ CREATE TABLE `tblemployees` (
   `EMPPASSWORD` varchar(125) NOT NULL,
   `DATEHIRED` date NOT NULL,
   `COMPANYID` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tblemployees`
@@ -206,7 +196,7 @@ CREATE TABLE `tblfeedback` (
   `APPLICANTID` int(11) NOT NULL,
   `REGISTRATIONID` int(11) NOT NULL,
   `FEEDBACK` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -228,7 +218,7 @@ CREATE TABLE `tbljob` (
   `SECTOR_VACANCY` text NOT NULL,
   `JOBSTATUS` varchar(90) NOT NULL,
   `DATEPOSTED` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tbljob`
@@ -253,10 +243,17 @@ CREATE TABLE `tbljobregistration` (
   `REGISTRATIONDATE` date NOT NULL,
   `REMARKS` varchar(255) NOT NULL DEFAULT 'Pending',
   `FILEID` int(11) NOT NULL,
-  `PENDINGAPPLICATION` tinyint(1) NOT NULL DEFAULT '1',
-  `HVIEW` tinyint(1) NOT NULL DEFAULT '1',
+  `PENDINGAPPLICATION` tinyint(1) NOT NULL DEFAULT 1,
+  `HVIEW` tinyint(1) NOT NULL DEFAULT 1,
   `DATETIMEAPPROVED` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `tbljobregistration`
+--
+
+INSERT INTO `tbljobregistration` (`REGISTRATIONID`, `COMPANYID`, `JOBID`, `APPLICANTID`, `APPLICANT`, `REGISTRATIONDATE`, `REMARKS`, `FILEID`, `PENDINGAPPLICATION`, `HVIEW`, `DATETIMEAPPROVED`) VALUES
+(8, 2, 2, 2024021, 'FTester LTester', '2024-03-28', 'Pending', 202400004, 1, 1, '2024-03-28 09:58:00');
 
 -- --------------------------------------------------------
 
@@ -271,15 +268,15 @@ CREATE TABLE `tblusers` (
   `PASS` varchar(90) NOT NULL,
   `ROLE` varchar(30) NOT NULL,
   `PICLOCATION` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `tblusers`
 --
 
 INSERT INTO `tblusers` (`USERID`, `FULLNAME`, `USERNAME`, `PASS`, `ROLE`, `PICLOCATION`) VALUES
-('00018', 'JANO ', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Administrator', 'photos/077db70b-ab84-46c4-bbaa-a5dd6b7332a4_200x200.png'),
-('2018001', 'Chambe Narciso', 'Narciso', 'f3593fd40c55c33d1788309d4137e82f5eab0dea', 'Employee', '');
+('00018', 'Admin', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Administrator', 'photos/077db70b-ab84-46c4-bbaa-a5dd6b7332a4_200x200.png'),
+('2018001', 'Tester User', 'tester', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'HR personnel', '');
 
 --
 -- Indexes for dumped tables
@@ -354,13 +351,13 @@ ALTER TABLE `tblusers`
 -- AUTO_INCREMENT for table `tblapplicants`
 --
 ALTER TABLE `tblapplicants`
-  MODIFY `APPLICANTID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2019021;
+  MODIFY `APPLICANTID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2024022;
 
 --
 -- AUTO_INCREMENT for table `tblattachmentfile`
 --
 ALTER TABLE `tblattachmentfile`
-  MODIFY `FILEID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2147483647;
+  MODIFY `FILEID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2147483648;
 
 --
 -- AUTO_INCREMENT for table `tblautonumbers`
@@ -402,7 +399,7 @@ ALTER TABLE `tbljob`
 -- AUTO_INCREMENT for table `tbljobregistration`
 --
 ALTER TABLE `tbljobregistration`
-  MODIFY `REGISTRATIONID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `REGISTRATIONID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

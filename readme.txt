@@ -12,7 +12,7 @@
 
 7. Create a database with name db_jobportal
 
-8. Import db_jobportal.sql file(given inside the zip package in SQL file folder)
+8. Import db_jobportal.sql file(given inside the zip package in SQL file)
 
 9.Run the script http://localhost/jobportal
 

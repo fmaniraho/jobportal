@@ -96,8 +96,8 @@
             <div class="media block-6 services d-block">
               <div class="icon"><span class="flaticon-resume"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Search Millions of Jobs</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+                <h3 class="heading mb-3">Search Hundreds of Jobs</h3>
+                <p>Find your dream job and grow career.</p>
               </div>
             </div>      
           </div>
@@ -106,7 +106,7 @@
               <div class="icon"><span class="flaticon-collaboration"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Easy To Manage Jobs</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+                <p>Find your dream job and grow career.</p>
               </div>
             </div>    
           </div>
@@ -115,7 +115,7 @@
               <div class="icon"><span class="flaticon-promotions"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Top Careers</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+                <p>Find your dream job and grow career.</p>
               </div>
             </div>      
           </div>
@@ -143,34 +143,26 @@
         <div class="row">
           <div class="col-md-3 ftco-animate">
             <ul class="category">
-              <li><a href="#">Web Development <span class="number" data-number="1000">0</span></a></li>
-              <li><a href="#">Graphic Designer <span class="number" data-number="1000">0</span></a></li>
-              <li><a href="#">Multimedia <span class="number" data-number="2000">0</span></a></li>
-              <li><a href="#">Advertising <span class="number" data-number="900">0</span></a></li>
+              <li><a href="#">Web Development <span class="number" data-number="10">0</span></a></li>
+              <li><a href="#">Advertising <span class="number" data-number="9">0</span></a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 ftco-animate">
+            <ul class="category">
+              <li><a href="#">Education &amp; Training <span class="number" data-number="350">0</span></a></li>
+              <li><a href="#">Writing <span class="number" data-number="25">0</span></a></li>
             </ul>
           </div>
           <div class="col-md-3 ftco-animate">
             <ul class="category">
-              <li><a href="#">Education &amp; Training <span class="number" data-number="3500">0</span></a></li>
-              <li><a href="#">English <span class="number" data-number="1560">0</span></a></li>
-              <li><a href="#">Social Media <span class="number" data-number="1000">0</span></a></li>
-              <li><a href="#">Writing <span class="number" data-number="2500">0</span></a></li>
+              <li><a href="#">Finance Management <span class="number" data-number="8">0</span></a></li>
+              <li><a href="#">Office &amp; Admin <span class="number" data-number="70">0</span></a></li>
             </ul>
           </div>
           <div class="col-md-3 ftco-animate">
             <ul class="category">
-              <li><a href="#">PHP Programming <span class="number" data-number="5500">0</span></a></li>
-              <li><a href="#">Project Management <span class="number" data-number="2000">0</span></a></li>
-              <li><a href="#">Finance Management <span class="number" data-number="800">0</span></a></li>
-              <li><a href="#">Office &amp; Admin <span class="number" data-number="7000">0</span></a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <ul class="category">
-              <li><a href="#">Web Designer <span><span class="number" data-number="8000">0</span></span></a></li>
-              <li><a href="#">Customer Service <span class="number" data-number="4000">0</span></a></li>
-              <li><a href="#">Marketing &amp; Sales <span class="number" data-number="3300">0</span></a></li>
-              <li><a href="#">Software Development <span class="number" data-number="1356">0</span></a></li>
+              <li><a href="#">English <span class="number" data-number="15">0</span></a></li>
+              <li><a href="#">Software Development <span class="number" data-number="15">0</span></a></li>
             </ul>
           </div>
         </div>

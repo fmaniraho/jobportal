@@ -41,7 +41,7 @@
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">The key is to ensure that the frontend is well-implemented, responsive, and aligned with the provided designs.</p>
                     <p class="name">Roger Scott</p>
                     <span class="position">Marketing Manager</span>
                   </div>
@@ -55,7 +55,7 @@
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">The key is to ensure that the frontend is well-implemented, responsive, and aligned with the provided designs.</p>
                     <p class="name">Roger Scott</p>
                     <span class="position">Interface Designer</span>
                   </div>
@@ -69,7 +69,7 @@
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">The key is to ensure that the frontend is well-implemented, responsive, and aligned with the provided designs.</p>
                     <p class="name">Roger Scott</p>
                     <span class="position">UI Designer</span>
                   </div>
@@ -83,7 +83,7 @@
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">The key is to ensure that the frontend is well-implemented, responsive, and aligned with the provided designs.</p>
                     <p class="name">Roger Scott</p>
                     <span class="position">Web Developer</span>
                   </div>
@@ -97,7 +97,7 @@
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">The key is to ensure that the frontend is well-implemented, responsive, and aligned with the provided designs.</p>
                     <p class="name">Roger Scott</p>
                     <span class="position">System Analyst</span>
                   </div>
@@ -117,7 +117,7 @@
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="1350000">0</strong>
+		                <strong class="number" data-number="900">0</strong>
 		                <span>Jobs</span>
 		              </div>
 		            </div>
@@ -125,7 +125,7 @@
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="40000">0</strong>
+		                <strong class="number" data-number="400">0</strong>
 		                <span>Members</span>
 		              </div>
 		            </div>
@@ -133,18 +133,11 @@
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="30000">0</strong>
+		                <strong class="number" data-number="900">0</strong>
 		                <span>Resume</span>
 		              </div>
 		            </div>
 		          </div>
-		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="10500">0</strong>
-		                <span>Company</span>
-		              </div>
-		            </div>
 		          </div>
 		        </div>
 	        </div>
