@@ -67,13 +67,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu" style="padding-right: 15px;"  >
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo web_root.'admin/user/'. $singleuser->PICLOCATION;?>" class="user-image" alt="User Image">
+              <img src="<?php echo web_root.'admin/user/photos/user.png';?>" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo $singleuser->FULLNAME; ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header"> 
-                <img data-target="#menuModal"  data-toggle="modal"  src="<?php echo web_root.'admin/user/'. $singleuser->PICLOCATION;?>" class="img-circle" alt="User Image" />  
+                <img data-target="#menuModal"  data-toggle="modal"  src="<?php echo web_root.'admin/user/photos/user.png';?>" class="img-circle" alt="User Image" />  
               </li> 
               <!-- Menu Footer-->
               <li class="user-footer">
@@ -92,8 +92,6 @@
       </div>
     </nav>
   </header>
-
-
 
  <div class="modal fade" id="menuModal" tabindex="-1">
                         <div class="modal-dialog">
@@ -151,21 +149,13 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>  
           </a> 
         </li> 
-        <li class="<?php echo (currentpage() == 'company') ? "active" : false;?>" >
-          <a href="<?php echo web_root ;?>admin/company/">
-            <i class="fa fa-building"></i> <span>Company</span> 
-          </a>
-        </li>
+        
         <li class="<?php echo (currentpage() == 'vacancy') ? "active" : false;?>" >
           <a href="<?php echo web_root ;?>admin/vacancy/">
             <i class="fa fa-suitcase"></i> <span>Vacancy</span> 
           </a>
         </li>
-        <li class="<?php echo (currentpage() == 'employee') ? "active" : false;?>" >
-          <a href="<?php echo web_root ;?>admin/employee/">
-            <i class="fa fa-users"></i> <span>Employee</span> 
-          </a>
-        </li> 
+        
         <li class="<?php echo (currentpage() == 'applicants') ? "active" : false;?>" > 
           <a href="<?php echo web_root ;?>admin/applicants/">
             <i class="fa fa-users"></i> <span>Applicants</span> 
