@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2024 at 10:21 AM
+-- Generation Time: Mar 28, 2024 at 11:01 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -142,11 +142,7 @@ CREATE TABLE `tblcompany` (
 --
 
 INSERT INTO `tblcompany` (`COMPANYID`, `COMPANYNAME`, `COMPANYADDRESS`, `COMPANYCONTACTNO`, `COMPANYSTATUS`, `COMPANYMISSION`) VALUES
-(2, 'URC', 'Bry Camugao', '023654', '', 'weqwe'),
-(3, 'Copreros', 'Mabinay\'s', '035656', '', ''),
-(4, 'Quest', 'Kabankalan City', '23165', '', ''),
-(6, 'Palacios Company', 'Kabankalan City', '0625656899', '', ''),
-(7, 'IT Company', 'Kabankalan City', '04564123', '', '');
+(7, 'Alight', 'Kigali City', '+250788834002', '', '');
 
 -- --------------------------------------------------------
 
@@ -183,7 +179,7 @@ CREATE TABLE `tblemployees` (
 --
 
 INSERT INTO `tblemployees` (`INCID`, `EMPLOYEEID`, `FNAME`, `LNAME`, `MNAME`, `ADDRESS`, `BIRTHDATE`, `BIRTHPLACE`, `AGE`, `SEX`, `CIVILSTATUS`, `TELNO`, `EMP_EMAILADDRESS`, `CELLNO`, `POSITION`, `WORKSTATS`, `EMPPHOTO`, `EMPUSERNAME`, `EMPPASSWORD`, `DATEHIRED`, `COMPANYID`) VALUES
-(76, '2018001', 'Chambe', 'Narciso', 'Captain', 'mabinay', '1992-01-23', 'Mabinay', 26, 'Male', 'Married', '032656', 'chambe@yahoo.com', '', 'Fuel Tender', '', '', '2018001', 'f3593fd40c55c33d1788309d4137e82f5eab0dea', '2018-05-23', 2);
+(76, '2018001', 'FTester', 'LTester', 'Tester', 'Kigali', '1992-01-23', 'Mabinay', 26, 'Male', 'Married', '032656', 'tester@yahoo.com', '', 'Fuel Tender', '', '', '2018001', 'f3593fd40c55c33d1788309d4137e82f5eab0dea', '2018-05-23', 2);
 
 -- --------------------------------------------------------
 
@@ -225,8 +221,8 @@ CREATE TABLE `tbljob` (
 --
 
 INSERT INTO `tbljob` (`JOBID`, `COMPANYID`, `CATEGORY`, `OCCUPATIONTITLE`, `REQ_NO_EMPLOYEES`, `SALARIES`, `DURATION_EMPLOYEMENT`, `QUALIFICATION_WORKEXPERIENCE`, `JOBDESCRIPTION`, `PREFEREDSEX`, `SECTOR_VACANCY`, `JOBSTATUS`, `DATEPOSTED`) VALUES
-(1, 2, 'Technology', 'ISD', 6, 15000, 'jan 30', 'Two year Experience', 'We are looking for bachelor of science in information technology.\r\nasdasdasd', 'Male/Female', 'yes', '', '2018-05-20 00:00:00'),
-(2, 2, 'Technology', 'Accounting', 1, 15000, 'may 20', 'Two years Experience', 'We are looking for bachelor of science in Acountancy', 'Female', 'yes', '', '2018-05-20 02:33:00');
+(1, 2, 'Technology', 'ISD', 6, 15000, 'may 24', 'Two year Experience', 'We are looking for bachelor of science in information technology.\r\nasdasdasd', 'Male/Female', 'yes', '', '2018-05-20 00:00:00'),
+(2, 2, 'Technology', 'Accounting', 1, 15000, 'may 24', 'Two years Experience', 'We are looking for bachelor of science in Acountancy', 'Female', 'yes', '', '2018-05-20 02:33:00');
 
 -- --------------------------------------------------------
 
