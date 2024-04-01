@@ -92,7 +92,7 @@
     <section class="ftco-section services-section bg-light">
       <div class="container">
         <div class="row d-flex">
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon"><span class="flaticon-resume"></span></div>
               <div class="media-body">
@@ -101,7 +101,7 @@
               </div>
             </div>      
           </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon"><span class="flaticon-collaboration"></span></div>
               <div class="media-body">
@@ -110,7 +110,7 @@
               </div>
             </div>    
           </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon"><span class="flaticon-promotions"></span></div>
               <div class="media-body">
@@ -119,15 +119,7 @@
               </div>
             </div>      
           </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-employee"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Search Expert Candidates</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
+          
         </div>
       </div>
     </section>
@@ -136,7 +128,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Categories work wating for you</span>
+            <span class="subheading">Categories work waiting for you</span>
             <h2 class="mb-4"><span>Current</span> Job Posts</h2>
           </div>
         </div>
